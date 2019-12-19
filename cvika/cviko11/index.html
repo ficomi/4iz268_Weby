@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var pocetPoznamek = 0;
+            $("#button").click(function () {
+
+                var poznamkaText = "Lorem ipsum "+pocetPoznamek;
+
+                var poznamka = $("<div></div>");
+                poznamka.text(poznamkaText);
+                poznamka.css({"cursor": "pointer"});
+
+                pocetPoznamek++;
+                var krizek = $("<a/>");
+                krizek.attr('href', '#');
+                krizek.text("x");
+
+
+                krizek.click(function () {
+
+                        $(this).remove();
+                        poznamka.remove();
+
+
+
+                });
+              poznamka.append(krizek);
+                $("#notes").append(poznamka);
+
+
+            })
+            pocetPoznamek++;
+        });
+
+
+    </script>
+</head>
+<body >
+<article>
+    <h1>Poznamky</h1>
+    <div id="notes">
+
+    </div>
+    <button type="button" id="button">Pridat</button>
+
+</article>
+</body>
+</html>

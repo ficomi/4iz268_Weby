@@ -1,0 +1,29 @@
+.no-print {
+    display:none;
+}
+
+
+.page-break	{
+    page-break-before: always;
+}
+body{
+    padding: 0px;
+}
+header{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.img-article{
+    display:none;
+}
+
+.img-menu{
+    display:none;
+}
+.leftcolumn{
+    width: 100%;
+}
+.card {
+    color: black;
+}

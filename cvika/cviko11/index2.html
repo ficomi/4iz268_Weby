@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .error{
+            background-color: red;
+            color: white;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="javascript">
+    $(document).ready(function () {
+        $("submit").click(function(){
+               var name = $("jmeno");
+               var adress =  $("ulice");
+               var city = $("mesto");
+               var psc = $("psc");
+
+               var firmName = $("jmenoFirmy");
+               var ico = $("ico");
+               var dic = $("dic");
+               var firmAdress = $("firmaAdresa");
+
+            console.info("sssss 1");
+
+
+
+            });
+        $("input[name='jeFirma']").click(function(){
+
+
+                var firmOptions = = $("input[name=jeFirma]").val();
+                if(firmOptions==false){
+
+                    $("firma").hide();
+                }else{
+
+                    $("firma").show();
+                }
+            console.info("sssss "+firmOptions.text);
+       });
+
+        });
+    </script>
+
+</head>
+<body>
+
+<form method="get" action="http://eso.vse.cz/~xvojs03/4iz268/10-vypis-formulare.php" id="form">
+    <br>
+    <label id="ljmeno">Jmeno:</label><br>
+    <input type="Jméno"  id="jmeno"  ><span class="error" hidden id="nameError">Špatně zadané jméno</span>
+    <label id="lulice">Ulice:</label><br>
+    <input type="text"  id="ulice" >
+    <label id="lmesto">Město</label><br>
+    <input type="text"  id="mesto" ><span class="error" hidden id="cityError">Špatně zadané město</span>
+    <label id="lpsc">PSČ:</label><br>
+    <input type="text"  id="psc"><span class="error" hidden id="pscError">Špatně zadané PSČ</span>
+    <label>Je firma:</label><input type="radio"  name="jeFirma"  value="true" /><label>ano</label><input type="radio"  name="jeFirma" value="false" /><label>ne</label>
+
+    <div id="firma" hidden>
+        <label id="ljmenofirmy">Email:</label><br>
+        <input type="Jméno Firmy"  id="jmenoFirmy" placeholder="Zde zadejte vaše jméno" required/><span class="error" hidden id="companyError">Špatně zadané jméno firmy</span>
+        <label id="lico">IČO:</label><br>
+        <input type="text"  id="ico" /><span class="error" hidden id="icoError">Špatně zadané IČO</span>
+        <label id="ldic">DIČ:</label><br>
+        <input type="text"  id="dic"/><span class="error" hidden id="dicError">Špatně zadané DIČ</span>
+        <label id="ladresaFirmy">Adresa:</label><br>
+        <input type="text"  id="firmaAdresa"/><span class="error" hidden id="addressFirmError">Špatně zadané PSČ</span>
+
+    </div>
+
+    <button id=submit">Odeslat</button>
+
+
+
+</form>
+</body>
+</html>
