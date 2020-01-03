@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+body {
+    font-family: Arial;
+    padding: 100px 10px 10px 10px;
+    min-width: 700px;
+    max-width: 1000px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #00ccff;
+    vertical-align: center;
+}
+
+.article-body {
+    float: left;
+    width: 100%;
+    background-color: white;
+    padding: 30px 30px 10px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.emailElement{
+    float: left;
+    width: 100%;
+    background-color: white;
+    padding: 30px 30px 10px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.emailArea {
+    margin-bottom: 30px;
+    border: solid 1px black;
+    width: 100%;
+    padding: 10px;
+}
+a{
+    padding: 5px;
+    background-color: grey;
+    border: 1px solid black;
+    float: right;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+a:hover{
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+.error-message{
+    color: red;
+    font-size: 12px;
+    padding: 15px;
+    font-weight: bold;
+
+}
+.success-message{
+    color: #00c900;
+    font-size: 12px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+

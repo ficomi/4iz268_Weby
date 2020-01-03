@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <script src="script/script.js"></script>
+</head>
+<body>
+<div class="article-body">
+    <div class="emailArea">
+
+
+        <h1>Poslat email:</h1>
+
+        <form>
+            <table>
+                <tr>
+                    <td><label>Příjemce:</label><br></td>
+                    <td><input type="email" id="receiver"><span class="errorReciver" hidden id="nameError">Špatně zadaný email.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Předmět:</label><br></td>
+                    <td><input type="text" id="subject"></td>
+                </tr>
+                <tr>
+                    <td><label>Text:</label><br></td>
+                    <td><textarea rows="4" cols="25" id="text"></textarea></td>
+                </tr>
+            </table>
+
+        </form>
+        <span class="error-message" id="error-message"></span>
+        <span class="success-message" id="success-message"></span>
+
+    </div>
+
+    <a id="addEmailToQueue" href="#">Přidat email do fronty</a>
+    <a id="send" href="#">Odeslat emaily</a>
+
+</div>
+
+<div>
+    <div id="savedEmails">
+    </div>
+</div>
+
+</body>
+</html>
